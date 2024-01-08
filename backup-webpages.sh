@@ -6,7 +6,7 @@ import subprocess
 import re
 from datetime import datetime
 
-date = datetime.today().strftime('%Y-%m-%d')
+date = datetime.today().strftime('%Y-%m-%d_%H%M%S')
 cur_root = f'/webpage_backups/{date}'
 
 public_html_paths = glob.glob('/home/*/public_html')
