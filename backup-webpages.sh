@@ -32,8 +32,8 @@ for public_html_path in public_html_paths:
                     '--to-files',
                     f'{ipfs_mfs_path}'])
 
-other_paths = ['/home/starptr/src/tilde-homepage/tilde',
-            '/home/starptr/src/tilde-homepage/root',
+other_paths = ['/home/starptr/src/tilde-homepage/build/tilde',
+            '/home/starptr/src/tilde-homepage/build/root',
             '/home/starptr/status-ref/build_html']
 other_mfs_rename = ['tilde_homepage',
                     'homepage',
