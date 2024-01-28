@@ -18,13 +18,13 @@ for public_html_path in public_html_paths:
 
     ipfs_mfs_path = f'{cur_root}/public_htmls/{username}/'
 
-    subprocess.run(['ipfs',
+    subprocess.run(['/usr/local/bin/ipfs',
                     'files',
                     'mkdir',
                     '--parents',
                     f'{ipfs_mfs_path}'])
 
-    subprocess.run(['ipfs',
+    subprocess.run(['/usr/local/bin/ipfs',
                     'add',
                     '--pin',
                     '--recursive',
@@ -44,13 +44,13 @@ for idx in range(len(other_paths)):
     other_mfs_prefix = other_mfs_rename[idx]
     ipfs_mfs_path = f'{cur_root}/{other_mfs_prefix}/'
 
-    subprocess.run(['ipfs',
+    subprocess.run(['/usr/local/bin/ipfs',
                     'files',
                     'mkdir',
                     '--parents',
                     f'{ipfs_mfs_path}'])
 
-    subprocess.run(['ipfs',
+    subprocess.run(['/usr/local/bin/ipfs',
                     'add',
                     '--pin',
                     '--recursive',
